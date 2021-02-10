@@ -2,12 +2,20 @@
 
 - できるだけ MagicKeyboard & Vim の感覚に寄せていく
 - できるだけラップトップではタイプしない
-- すべてのパソコンを対応しておく(Ubuntuは除く)
+- すべてのソコンを対応しておく(Ubuntuは除く)
 
-## 有用資料
+## 有用外部資料
 
-- http://ahkwiki.net/KeyList#Key_Ctrl
 - https://tech.pjin.jp/blog/2016/01/04/autohotkey_2/
+- https://qiita.com/riekure/items/49b941fa5159f9948313
+- http://did2.blog64.fc2.com/blog-entry-349.html
+- https://atooshi-note.com/apple-keyboard-wired-windows10-autohotkey-screenshot/
+- https://kazhat.at.webry.info/201608/article_3.html
+
+Autohotkey-wiki
+
+- http://ahkwiki.net/Send
+- http://ahkwiki.net/KeyList#Key_Ctrl
 
 ## その他のキーボード関連
 
