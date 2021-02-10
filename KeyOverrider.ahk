@@ -16,27 +16,44 @@ F13 & Left::Send, {Blind}#^{Left}
 F13 & Up::Send, {Blind}#{Tab}
 F13 & Down::Send, {Blind}#{Tab}
 ; WSL Override
+;; cmd+C  
+/*
+Ctrl & C::
+if WinActive("ahk_class WSL2-Ubuntu"){
+  Send, ^+C
+}else{
+  Send, ^C
+}
+return
+;; cmd+V
+Ctrl & V::
+if WinActive("ahk_class WSL2-Ubuntu"){
+  Send, ^+V
+}else{
+  Send, ^V
+}
+return
 ;; Ctrl+C
 F13 & C::
-if  ( WinActive("WSL2-Ubuntu")  ){
-	Send, ^C
+if WinActive("ahk_class WSL2-Ubuntu"){
+  Send, ^C
 }else{
-	Send,{F13}C
+  Send, {F13}C
 }
 return
-;; cmd+C  
-Ctrl & C::
-if  ( WinActive("WSL2-Ubuntu")  ){
-	Send, ^+C
-}else{
-	Send, ^C
-}
+*/
+;
+#IfWinActive, WSL2-Ubuntu
+  Ctrl & C::
+    Send, ^+C
 return
-;; cmd+C
-Ctrl & V::
-if  ( WinActive("WSL2-Ubuntu")  ){
-	Send, ^+V
-}else{
-	Send, ^V
-}
+;
+#IfWinActive, WSL2-Ubuntu
+  Ctrl & V::
+    Send, ^+V
+return
+;
+#IfWinActive, WSL2-Ubuntu
+  F13 & C::
+    Send, ^C
 return
