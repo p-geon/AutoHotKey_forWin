@@ -10,6 +10,8 @@ F13 & N::Send,{Blind}{Down}
 F13 & P::Send,{Blind}{Up}
 F13 & A::Send,{Blind}{Home}
 F13 & E::Send,{Blind}{End}
-; Set option as Win as #
-;sc07B::Send, #
-;vk1D::Send, {Blind}{LWin} ;Option
+; Handling Virtual Desktop
+F13 & Right::Send, {Blind}#^{Right}	
+F13 & Left::Send, {Blind}#^{Left}
+F13 & Up::Send, {Blind}#{Tab}
+F13 & Down::Send, {Blind}#{Tab}
