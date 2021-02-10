@@ -11,6 +11,7 @@
 - http://did2.blog64.fc2.com/blog-entry-349.html
 - https://atooshi-note.com/apple-keyboard-wired-windows10-autohotkey-screenshot/
 - https://kazhat.at.webry.info/201608/article_3.html
+- https://wp2.trojanbear.net/1026.html
 
 Autohotkey-wiki
 
@@ -33,3 +34,4 @@ Mac
 
 - Karabiner
 - なんとかハットみたいな名前のやつ（忘れた）
+

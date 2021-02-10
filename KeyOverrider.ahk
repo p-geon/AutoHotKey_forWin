@@ -15,3 +15,28 @@ F13 & Right::Send, {Blind}#^{Right}
 F13 & Left::Send, {Blind}#^{Left}
 F13 & Up::Send, {Blind}#{Tab}
 F13 & Down::Send, {Blind}#{Tab}
+; WSL Override
+;; Ctrl+C
+F13 & C::
+if  ( WinActive("WSL2-Ubuntu")  ){
+	Send, ^C
+}else{
+	Send,{F13}C
+}
+return
+;; cmd+C  
+Ctrl & C::
+if  ( WinActive("WSL2-Ubuntu")  ){
+	Send, ^+C
+}else{
+	Send, ^C
+}
+return
+;; cmd+C
+Ctrl & V::
+if  ( WinActive("WSL2-Ubuntu")  ){
+	Send, ^+V
+}else{
+	Send, ^V
+}
+return
